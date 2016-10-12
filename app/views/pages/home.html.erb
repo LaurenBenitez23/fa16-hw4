@@ -1,0 +1,18 @@
+<h1>Welcome</h1>
+
+<% if 1 == 1 %>
+  <h3><%= "1 equals 1." %></h3>
+<% end %>
+
+
+
+<table>
+  <tr>
+    <td>name</td>
+  </tr>
+  <% @cat.each do |c| %>
+    <tr>
+      <td><%= c.name %></td>
+    </tr>
+  <% end %>
+</table>
