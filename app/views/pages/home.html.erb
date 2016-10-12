@@ -1,10 +1,4 @@
-<h1>Welcome</h1>
-
-<% if 1 == 1 %>
-  <h3><%= "1 equals 1." %></h3>
-<% end %>
-
-
+<h1>Displaying From My Database</h1>
 
 <table>
   <tr>
@@ -13,6 +7,30 @@
   <% @cat.each do |c| %>
     <tr>
       <td><%= c.name %></td>
+    </tr>
+  <% end %>
+
+  <tr>
+    <td>task</td>
+    <td>finished?</td>
+  </tr>
+  <% @todo.each do |t| %>
+    <tr>
+      <td><%= t.tasks %></td>
+      <td><%= t.finished %></td>
+    </tr>
+  <% end %>
+
+  <tr>
+    <td>username</td>
+    <td>email</td>
+    <td>age</td>
+  </tr>
+  <% @user.each do |u| %>
+    <tr>
+      <td><%= u.username %></td>
+      <td><%= u.email %></td>
+      <td><%= u.age %></td>
     </tr>
   <% end %>
 </table>

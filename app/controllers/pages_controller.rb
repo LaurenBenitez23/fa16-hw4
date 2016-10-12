@@ -3,8 +3,8 @@ class PagesController < ApplicationController
   def home
     # @albums = Album.all
     @cat = Cat.all
-    #@todo = Todo.all
-    #@user = User.all
+    @todo = Todo.all
+    @user = User.all
     #Todo
 
 # tasks: a string name of a Todo that needs to be done
@@ -26,7 +26,7 @@ class PagesController < ApplicationController
     #   :artist => params[:artist], 
     #   :year => params[:year])
     # redirect_to '/'
-    
+
     # Cat.create(
     #   :name=> params[:name])
 
